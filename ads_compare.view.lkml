@@ -21,7 +21,7 @@ view: ads_compare {
       ),
       google_perf as (
         select  a.id as ad_id,
-                'google_ad_default'::text as ad_name,
+                'google_ad_default' as ad_name,
                 g.name as adset_name,
                 c.name as campaign_name,
                 sum(apr.cost/1000000) as spend,
