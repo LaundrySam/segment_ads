@@ -107,7 +107,7 @@ view: ads_compare {
 
   measure: cost_per_click {
     type: number
-    sql: ${spend}::float/NULLIF(${clicks},0) ;;
+    sql: ${spend}/NULLIF(${clicks},0) ;;
     value_format_name: usd
   }
 
