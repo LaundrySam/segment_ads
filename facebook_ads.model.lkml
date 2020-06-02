@@ -1,4 +1,4 @@
-connection: "pb_n_jays_postgres"
+connection: "laundry_bigquery_db"
 
 # include all the views
 include: "*.view"
