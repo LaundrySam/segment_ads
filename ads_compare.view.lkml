@@ -9,7 +9,7 @@ view: ads_compare {
                 sum(i.spend) as spend,
                 sum(i.impressions) as impresssions,
                 sum(i.clicks) as clicks,
-                'Facebook Ads'::text as source
+                'Facebook Ads' as source
           from  facebook_ads.ads a
           join  facebook_ads.insights i
             on  a.id = i.ad_id
@@ -27,7 +27,7 @@ view: ads_compare {
                 sum(apr.cost/1000000) as spend,
                 sum(apr.impressions) as impresssions,
                 sum(apr.clicks) as clicks,
-                'Google Ad Words'::text as source
+                'Google Ad Words' as source
           from  adwords9.ads a
           join  adwords9.ad_performance_reports apr
             on  a.id = apr.ad_id
